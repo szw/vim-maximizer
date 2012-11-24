@@ -1,6 +1,6 @@
 " vim-maximizer - Maximizes and restores the current window
 " Maintainer:   Szymon Wrozynski
-" Version:      1.0.0
+" Version:      1.0.1
 "
 " Installation:
 " Place in ~/.vim/plugin/maximizer.vim or in case of Pathogen:
@@ -27,12 +27,12 @@ command! -nargs=0 MaximizerToggle :call s:maximizer_toggle()
 fun! s:maximizer_toggle()
     if exists("t:maximizer_sizes")
         silent! exe t:maximizer_sizes
+        if t:maximizer_sizes != winrestcmd()
+            silent! exe "wincmd ="
+        endif
         unlet t:maximizer_sizes
     elseif winnr('$') > 1
         let t:maximizer_sizes = winrestcmd()
-        silent! exe "wincmd |"
-        silent! exe "wincmd _"
-    else
-        echo "This window is maximized already!"
+        vert resize | resize
     endif
 endfun
