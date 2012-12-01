@@ -22,7 +22,7 @@ endif
 
 let g:loaded_vim_maximizer = 1
 
-command! -nargs=0 MaximizerToggle :call s:maximizer_toggle()
+command! -nargs=0 -range MaximizerToggle :call s:maximizer_toggle()
 
 fun! s:maximizer_toggle()
     if exists("t:maximizer_sizes")
