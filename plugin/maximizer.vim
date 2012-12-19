@@ -35,4 +35,5 @@ fun! s:maximizer_toggle()
         let t:maximizer_sizes = winrestcmd()
         vert resize | resize
     endif
+    normal ze
 endfun
