@@ -77,7 +77,7 @@ You can change those values by tweaking |'winminheight'| (|'wmh'|) and
 ---------------------------------------------------------------------------
 4. Author and License                              *maximizer-author-license*
 
-Maximizer has been written by Szymon Wrozynski. It is licensed under the same
-terms as Vim itself. For more info see |license|.
+Maximizer was written by Szymon Wrozynski. It is licensed under the same terms
+as Vim itself. For more info see |license|.
 
 vim:tw=78:ts=8:ft=help:norl:

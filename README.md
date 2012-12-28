@@ -61,7 +61,6 @@ minimal window height and width are set to 1.  You can change those values by tw
 Author and License
 ------------------
 
-Maximizer has been written by Szymon Wrozynski. It is licensed under the same
-terms as Vim itself.
+Maximizer was written by Szymon Wrozynski. It is licensed under the same terms as Vim itself.
 
 Copyright &copy; 2012 Szymon Wrozynski. See `:help license`
