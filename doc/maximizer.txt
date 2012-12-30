@@ -1,4 +1,4 @@
-*maximizer.txt*          For Vim version 7.3         Last change: 2012-12-28
+*maximizer.txt*           For Vim version 7.3          Last change: 2012-12-28
 *maximizer*
 
 
@@ -16,16 +16,16 @@
 
 Copyright (c) 2012 Szymon Wrozynski
 
-===========================================================================
+============================================================================
 Table of Contents
 
-    1. About................................................|maximizer-about|
-    2. Usage................................................|maximizer-usage|
-    3. Configuration................................|maximizer-configuration|
-    4. Author and License..........................|maximizer-author-license|
+    1. About.................................................|maximizer-about|
+    2. Usage.................................................|maximizer-usage|
+    3. Configuration.................................|maximizer-configuration|
+    4. Author and License...........................|maximizer-author-license|
 
 ---------------------------------------------------------------------------
-1. About                                                    *maximizer-about*
+1. About                                                     *maximizer-about*
 
 Maximizer lets you maximize split windows and restore them automatically. It
 is very useful if you like to have many split windows per tab. And also, if
@@ -35,8 +35,8 @@ of 80-character Lines..."
 It means, while working with Ruby on Rails code. ;) Or just with lengthy HTML
 files.
 
----------------------------------------------------------------------------
-2. Usage                                                    *maximizer-usage*
+----------------------------------------------------------------------------
+2. Usage                                                     *maximizer-usage*
 
 Maximizer has only one command: >
 
@@ -51,8 +51,8 @@ positions of all windows in the current tab, and then it performs maximization
 of the active window. The second time the command is invoked, Maximizer
 restores all windows to the previously saved positions and the cycle repeats.
 
----------------------------------------------------------------------------
-3. Configuration                                    *maximizer-configuration*
+----------------------------------------------------------------------------
+3. Configuration                                     *maximizer-configuration*
 
 Maximizer is extremely handy with command mappings. The mappings can be
 defined for normal, insert, and visual modes. Here is the example of the <F3>
@@ -74,8 +74,8 @@ horizontally. By default the minimal window height and width are set to 1.
 You can change those values by tweaking |'winminheight'| (|'wmh'|) and
 |'winminwidth'| (|'wmw'|) settings in your .vimrc.
 
----------------------------------------------------------------------------
-4. Author and License                              *maximizer-author-license*
+----------------------------------------------------------------------------
+4. Author and License                               *maximizer-author-license*
 
 Maximizer was written by Szymon Wrozynski. It is licensed under the same terms
 as Vim itself. For more info see |license|.
