@@ -24,7 +24,7 @@ Table of Contents
     3. Configuration.................................|maximizer-configuration|
     4. Author and License...........................|maximizer-author-license|
 
----------------------------------------------------------------------------
+----------------------------------------------------------------------------
 1. About                                                     *maximizer-about*
 
 Maximizer lets you maximize split windows and restore them automatically. It
