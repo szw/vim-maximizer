@@ -24,8 +24,16 @@ let g:loaded_vim_maximizer = 1
 
 command! -nargs=0 -range MaximizerToggle :call s:maximizer_toggle()
 
+fun! s:others_minimized()
+    for w in range(1, winnr('$'))
+        if w != winnr() && winheight(w) > &winminheight && winwidth(w) > &winminwidth
+            return 0
+        endif
+    endfor
+    return 1
+endfun
 fun! s:maximizer_toggle()
-    if exists('t:maximizer_sizes')
+    if exists('t:maximizer_sizes') && s:others_minimized()
         silent! exe t:maximizer_sizes
         if t:maximizer_sizes != winrestcmd()
             wincmd =
