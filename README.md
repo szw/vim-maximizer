@@ -32,10 +32,9 @@ Maximizer has only one command:
 It is meant to be mapped in many ways by the user himself. See [Configuration](#configuration) to
 get some examples.
 
-Upon the first invocation of the command, Vim-Maximizer saves dimensions and positions of all
-windows in the current tab, and then it performs maximization of the active window. The second time
-the command is invoked, Maximizer restores all windows to the previously saved positions and the
-cycle repeats.
+When the current window is not in maximized state, Vim-Maximizer saves dimensions and positions of
+all windows in the current tab, and then it performs maximization of the active window. The second
+time the command is invoked, Maximizer restores all windows to the previously saved positions.
 
 <div id="configuration"></div>
 Configuration
@@ -61,6 +60,8 @@ minimal window height and width are set to 1.  You can change those values by tw
 Author and License
 ------------------
 
-Maximizer was written by Szymon Wrozynski. It is licensed under the same terms as Vim itself.
+Maximizer was written by Szymon Wrozynski and
+[Contributors](https://github.com/szw/vim-maximizer/commits/master). It is licensed under the same
+terms as Vim itself.
 
 Copyright &copy; 2012 Szymon Wrozynski. See `:help license`
