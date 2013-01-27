@@ -6,7 +6,7 @@
 
 
 
-                        Vim-Maximizer version 1.0.1~
+                        Vim-Maximizer version 1.0.3~
 
                 Maximizes and restores the current window in Vim.~
 
