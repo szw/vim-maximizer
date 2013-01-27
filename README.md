@@ -36,6 +36,15 @@ When the current window is not in maximized state, Vim-Maximizer saves dimension
 all windows in the current tab, and then it performs maximization of the active window. The second
 time the command is invoked, Maximizer restores all windows to the previously saved positions.
 
+The toggle command can be invoked with a bang (!):
+
+    :MaximizerToggle!
+
+The bang version forces the restoration of previously saved state (if any). It can be used in case
+you did some changes in the maximized state layout and the current window is not maximized anymore.
+Despite that, the bang version force restoration anyway. Notice, the bang version can be set as the
+default one in your mappings.
+
 <div id="configuration"></div>
 Configuration
 -------------
