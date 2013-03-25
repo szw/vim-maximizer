@@ -15,7 +15,6 @@
 "
 " Usage:
 " https://github.com/szw/vim-maximizer/blob/master/README.md
-"
 
 if exists('g:loaded_vim_maximizer') || &cp || v:version < 700
     finish
