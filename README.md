@@ -29,8 +29,8 @@ Maximizer has only one command:
 
     :MaximizerToggle
 
-It is meant to be mapped in many ways by the user himself. See [Configuration](#configuration) to
-get some examples.
+Also the plugin can define some default mappings if the user wants to.  By default it maps to `<F3>`
+in normal, insert, and visual modes.  See [Configuration](#configuration) to get some examples.
 
 When the current window is not in maximized state, Vim-Maximizer saves dimensions and positions of
 all windows in the current tab, and then it performs maximization of the active window. The second
@@ -49,9 +49,7 @@ default one in your mappings.
 Configuration
 -------------
 
-Maximizer is extremely handy with command mappings. The mappings can be defined for normal, insert,
-and visual modes. Here is the example of the `<F3>` key usage. You can paste it directly into your
-.vimrc file.
+Maximizer is extremely handy with command mappings. By default it uses `<F3>` like here:
 
     nnoremap <silent><F3> :MaximizerToggle<CR>
     vnoremap <silent><F3> :MaximizerToggle<CR>gv
@@ -66,6 +64,30 @@ minimal window height and width are set to 1.  You can change those values by tw
 `'winminheight'` (`'wmh'`) and `'winminwidth'` (`'wmw'`) settings in your .vimrc.
 
 
+Here are some plugin options:
+
+
+* `maximizer_set_default_mapping`
+
+    Whether Maximizer should set default mappings or not:
+
+        let g:maximizer_set_default_mapping = 1
+
+
+* `maximizer_set_mapping_with_bang`
+
+    Whether Maximizer should set default mappings with banged version or not:
+
+        let g:maximizer_set_mapping_with_bang = 0
+
+
+* `maximizer_default_mapping_key`
+
+    The default mappings key:
+
+        let g:maximizer_default_mapping_key = '<F3>'
+
+
 Author and License
 ------------------
 
@@ -73,4 +95,4 @@ Maximizer was written by Szymon Wrozynski and
 [Contributors](https://github.com/szw/vim-maximizer/commits/master). It is licensed under the same
 terms as Vim itself.
 
-Copyright &copy; 2012 Szymon Wrozynski. See `:help license`
+Copyright &copy; 2012-2013 Szymon Wrozynski. See `:help license`
