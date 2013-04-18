@@ -12,6 +12,9 @@ Place in *~/.vim/plugin/maximizer.vim* or in case of Pathogen:
     cd ~/.vim/bundle
     git clone https://github.com/szw/vim-maximizer.git
 
+Please, don't forget to star the repository if you like (and use) the plugin. This will let me know
+how many users it has and then how to proceed with further development :).
+
 
 About
 -----
@@ -21,6 +24,7 @@ like to have many split windows per tab. And also, if the text you are working w
 [_...subscribe to the ridiculous Church of 80-character
 Lines..._](http://37signals.com/svn/posts/3250-clarity-over-brevity-in-variable-and-method-names).
 It means, while working with Ruby on Rails code. ;) Or just with lengthy HTML files.
+
 
 Usage
 -----
@@ -44,6 +48,7 @@ The bang version forces the restoration of previously saved state (if any). It c
 you did some changes in the maximized state layout and the current window is not maximized anymore.
 Despite that, the bang version force restoration anyway. Notice, the bang version can be set as the
 default one in your mappings.
+
 
 <div id="configuration"></div>
 Configuration
