@@ -117,6 +117,15 @@ The default mappings key: >
 
 <
 
+                                              *'maximizer_restore_on_winleave'*
+Default: 0
+
+Restore original windows sizes automatically when leaving maximized window: >
+
+    let g:maximizer_restore_on_winleave = 1
+
+<
+
 ----------------------------------------------------------------------------
 4. Author and License                               *maximizer-author-license*
 
