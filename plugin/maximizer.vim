@@ -57,7 +57,9 @@ fun! s:maximize()
     let t:maximizer_sizes = { 'before': winrestcmd() }
     vert resize | resize
     let t:maximizer_sizes.after = winrestcmd()
-    normal! ze
+    if &buftype != 'terminal'
+        normal! ze
+    endif
 endfun
 
 fun! s:restore()
@@ -67,7 +69,9 @@ fun! s:restore()
             wincmd =
         endif
         unlet t:maximizer_sizes
-        normal! ze
+        if &buftype != 'terminal'
+            normal! ze
+        endif
     end
 endfun
 
